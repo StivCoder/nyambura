@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop Baby Clothing Kenya | Onesies, Rompers, Sets — Terry Tender Wear</title>
+  <meta name="description" content="Browse premium baby clothing in Kenya. Onesies, rompers, sets, sleepwear & more. Filter by category, search by name. Order instantly via WhatsApp."/>
+  <!-- ══ SEO: Primary Meta Tags ══ -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+  <meta name="keywords" content="baby clothes Kenya, baby onesies Kenya, baby rompers Kenya, baby sets Kenya, baby sleepwear Kenya, baby dresses Kenya, affordable baby clothing, newborn clothes Nairobi, WhatsApp baby shop Kenya"/>
+  <meta name="author" content="Terry Tender Wear"/>
+  <meta name="theme-color" content="var(--coral)"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-title" content="Terry Tender Wear"/>
+  <link rel="canonical" href="https://terrytenderwear.co.ke/products.html"/>
+
+  <!-- ══ SEO: Open Graph ══ -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://terrytenderwear.co.ke/products.html"/>
+  <meta property="og:site_name" content="Terry Tender Wear"/>
+  <meta property="og:locale" content="en_KE"/>
+  <meta property="og:title" content="Shop Baby Clothing — Terry Tender Wear Kenya"/>
+  <meta property="og:description" content="Browse 50+ premium baby clothing styles in Kenya. From KES 1,200. Order in seconds via WhatsApp."/>
+  <meta property="og:image" content="https://images.unsplash.com/photo-1522771930-78848d9293e8?w=1200&h=630&auto=format&fit=crop&q=80"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:alt" content="Shop Baby Clothing — Terry Tender Wear Kenya"/>
+
+  <!-- ══ SEO: Twitter Card ══ -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@TerryTenderWear"/>
+  <meta name="twitter:title" content="Shop Baby Clothing — Terry Tender Wear Kenya"/>
+  <meta name="twitter:description" content="Browse 50+ premium baby clothing styles in Kenya. From KES 1,200. Order in seconds via WhatsApp."/>
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1522771930-78848d9293e8?w=1200&h=630&auto=format&fit=crop&q=80"/>
+
+  <!-- ══ SEO: Performance ══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net"/>
+  <link rel="dns-prefetch" href="https://wa.me"/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👶</text></svg>"/>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .shop-hero{background:linear-gradient(135deg,var(--coral-l) 0%,var(--mint-l) 100%);
+               padding:2.5rem 0 2rem;text-align:center;position:relative;overflow:hidden}
+    .shop-hero::before{content:'';position:absolute;inset:0;
+      background:radial-gradient(ellipse at 70% 50%,rgba(255,182,193,.4),transparent 60%)}
+    .shop-hero h1{position:relative;font-family:var(--font-d);
+                  font-size:clamp(1.8rem,4vw,3rem);font-weight:700;color:var(--charcoal)}
+    .shop-hero p{color:var(--mid);margin-top:.5rem;position:relative;font-size:.95rem}
+
+    /* Sticky filter sidebar on desktop */
+    .shop-layout{display:grid;grid-template-columns:240px 1fr;gap:2.5rem;
+                 padding:3rem 0 5rem;align-items:start}
+    .shop-sidebar{position:sticky;top:calc(var(--nav-h) + 1rem)}
+    .sidebar-card{background:var(--white);border-radius:var(--r-md);
+                  padding:1.5rem;box-shadow:var(--sh-sm);margin-bottom:1rem}
+    .sidebar-card h3{font-family:var(--font-d);font-size:1rem;font-weight:600;
+                     color:var(--charcoal);margin-bottom:1rem;
+                     padding-bottom:.6rem;border-bottom:1px solid var(--line)}
+    .sidebar-cat-btn{display:flex;align-items:center;justify-content:space-between;
+                     width:100%;padding:.55rem .7rem;border-radius:var(--r-sm);
+                     font-size:.85rem;color:var(--mid);transition:var(--t);
+                     text-align:left;margin-bottom:.3rem}
+    .sidebar-cat-btn:hover,.sidebar-cat-btn.active{background:var(--coral-l);color:var(--charcoal);font-weight:600}
+    .sidebar-cat-btn.active{background:var(--coral-l);color:var(--coral-d);font-weight:700}
+    .cat-count{font-size:.72rem;color:var(--mid);background:var(--cream-d);
+               padding:.15rem .5rem;border-radius:50px}
+    .price-range-wrap{display:flex;flex-direction:column;gap:.6rem}
+    .price-range-wrap input[type=range]{width:100%;accent-color:var(--coral-d)}
+    .price-display{display:flex;justify-content:space-between;font-size:.78rem;color:var(--mid);font-weight:500}
+    .clear-filters-btn{width:100%;padding:.6rem;border:1.5px solid var(--line);
+                        border-radius:var(--r-sm);font-size:.8rem;color:var(--mid);
+                        transition:var(--t);margin-top:.5rem}
+    .clear-filters-btn:hover{border-color:var(--coral-d);color:var(--coral-d)}
+
+    /* Mobile filter toggle */
+    .mobile-filter-toggle{display:none;align-items:center;gap:.5rem;
+                          padding:.6rem 1.2rem;background:var(--white);
+                          border:1.5px solid var(--line);border-radius:50px;
+                          font-size:.82rem;font-weight:600;color:var(--charcoal)}
+    .mobile-filter-drawer{position:fixed;inset:0;z-index:500;
+                           background:rgba(0,0,0,.45);opacity:0;pointer-events:none;
+                           transition:opacity var(--t)}
+    .mobile-filter-drawer.open{opacity:1;pointer-events:all}
+    .mobile-filter-inner{position:absolute;bottom:0;left:0;right:0;
+                          background:var(--white);border-radius:var(--r-lg) var(--r-lg) 0 0;
+                          padding:1.5rem;max-height:80vh;overflow-y:auto;
+                          transform:translateY(100%);transition:transform .35s var(--ease)}
+    .mobile-filter-drawer.open .mobile-filter-inner{transform:translateY(0)}
+
+    .results-header{display:flex;align-items:center;justify-content:space-between;
+                    flex-wrap:wrap;gap:.8rem;margin-bottom:1.5rem}
+    .results-info{font-size:.85rem;color:var(--mid)}
+    .results-info strong{color:var(--charcoal)}
+
+    @media(max-width:900px){
+      .shop-layout{grid-template-columns:1fr}
+      .shop-sidebar{display:none}
+      .mobile-filter-toggle{display:flex}
+    }
+  </style>
+</head>
+<body>
+
+<script>
+/* ── Inline nav init — runs immediately, no dependency on app.js ── */
+(function(){
+  function initNav(){
+    var toggle = document.getElementById('nav-toggle');
+    var links  = document.getElementById('nav-links');
+    if(!toggle || !links) return;
+    
+    toggle.addEventListener('click', function(){
+      var isOpen = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-active', isOpen);
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    
+    // Close on link click
+    links.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        links.classList.remove('is-open');
+        toggle.classList.remove('is-active');
+        toggle.setAttribute('aria-expanded','false');
+        document.body.style.overflow = '';
+      });
+    });
+    
+    // Close on outside click
+    document.addEventListener('click', function(e){
+      if(links.classList.contains('is-open') && 
+         !toggle.contains(e.target) && 
+         !links.contains(e.target)){
+        links.classList.remove('is-open');
+        toggle.classList.remove('is-active');
+        toggle.setAttribute('aria-expanded','false');
+        document.body.style.overflow = '';
+      }
+    });
+
+    // Sticky header on scroll
+    var header = document.getElementById('site-header');
+    if(header){
+      window.addEventListener('scroll', function(){
+        header.classList.toggle('scrolled', window.scrollY > 60);
+      }, {passive:true});
+    }
+  }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initNav);
+  } else {
+    initNav();
+  }
+})();
+</script>
+
+<!-- PROMO BANNER -->
+<div class="promo-banner" id="promo-banner">
+  <p>🎉 <strong>Free Delivery</strong> on orders over KES 3,000 · Use WhatsApp to order instantly</p>
+  <button class="promo-close" id="promo-close" aria-label="Close">✕</button>
+</div>
+
+<!-- NAV -->
+<header class="site-header" id="site-header">
+  <nav class="container nav-inner">
+    <a href="index.html" class="nav-logo">Terry <span>Tender</span> Wear</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html" class="active">Shop</a></li>
+      <li><a href="about.html">Our Story</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="nav-cart-btn" id="nav-cart-btn" aria-label="Open cart">
+        🛒<span class="cart-count" id="cart-count-nav"></span>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- SHOP HERO -->
+<div class="shop-hero">
+  <h1>The Full Collection</h1>
+  <p>Premium baby clothing — soft, safe, and simply adorable</p>
+</div>
+
+<!-- SHOP LAYOUT -->
+<div class="container shop-layout">
+
+  <!-- SIDEBAR (desktop) -->
+  <aside class="shop-sidebar">
+    <!-- Search -->
+    <div class="sidebar-card">
+      <h3>🔍 Search</h3>
+      <div id="search-wrap"></div>
+    </div>
+
+    <!-- Categories -->
+    <div class="sidebar-card">
+      <h3>📂 Categories</h3>
+      <div id="sidebar-categories">
+        <button class="sidebar-cat-btn active" data-cat="all">All Items <span class="cat-count" id="count-all">—</span></button>
+        <button class="sidebar-cat-btn" data-cat="Onesies">Onesies <span class="cat-count" id="count-Onesies">—</span></button>
+        <button class="sidebar-cat-btn" data-cat="Sets">Sets <span class="cat-count" id="count-Sets">—</span></button>
+        <button class="sidebar-cat-btn" data-cat="Rompers">Rompers <span class="cat-count" id="count-Rompers">—</span></button>
+        <button class="sidebar-cat-btn" data-cat="Sleepwear">Sleepwear <span class="cat-count" id="count-Sleepwear">—</span></button>
+        <button class="sidebar-cat-btn" data-cat="Dresses">Dresses <span class="cat-count" id="count-Dresses">—</span></button>
+        <button class="sidebar-cat-btn" data-cat="Knitwear">Knitwear <span class="cat-count" id="count-Knitwear">—</span></button>
+      </div>
+    </div>
+
+    <!-- Price filter -->
+    <div class="sidebar-card">
+      <h3>💰 Price Range</h3>
+      <div class="price-range-wrap">
+        <input type="range" id="price-max" min="500" max="5000" value="5000" step="100"/>
+        <div class="price-display">
+          <span>KES 500</span>
+          <span id="price-max-label">KES 5,000</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Availability -->
+    <div class="sidebar-card">
+      <h3>✅ Availability</h3>
+      <div class="checkbox-wrap">
+        <input type="checkbox" id="filter-instock" checked/>
+        <label for="filter-instock">In Stock Only</label>
+      </div>
+      <div class="checkbox-wrap">
+        <input type="checkbox" id="filter-new"/>
+        <label for="filter-new">New Arrivals Only</label>
+      </div>
+      <button class="clear-filters-btn" id="clear-filters-btn">Clear All Filters</button>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="shop-main">
+
+    <!-- Mobile controls row -->
+    <div class="results-header">
+      <div class="results-info">
+        Showing <strong id="product-count">—</strong> products
+      </div>
+      <div style="display:flex;gap:.6rem;align-items:center;flex-wrap:wrap">
+        <button class="mobile-filter-toggle" id="mobile-filter-toggle">
+          ⚙️ Filters
+        </button>
+        <div class="filter-bar" id="sort-filters">
+          <button class="filter-btn active" data-sort="default">Default</button>
+          <button class="filter-btn" data-sort="price-asc">Price ↑</button>
+          <button class="filter-btn" data-sort="price-desc">Price ↓</button>
+          <button class="filter-btn" data-sort="name">A–Z</button>
+          <button class="filter-btn" data-sort="new">New First</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product grid -->
+    <div class="products-grid" id="products-grid">
+      <div class="skeleton skeleton-card"></div>
+      <div class="skeleton skeleton-card"></div>
+      <div class="skeleton skeleton-card"></div>
+      <div class="skeleton skeleton-card"></div>
+      <div class="skeleton skeleton-card"></div>
+      <div class="skeleton skeleton-card"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Mobile filter drawer -->
+<div class="mobile-filter-drawer" id="mobile-filter-drawer">
+  <div class="mobile-filter-inner">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.2rem">
+      <h3 style="font-family:var(--font-d);font-size:1.2rem;color:var(--charcoal)">Filters</h3>
+      <button id="close-mobile-filter" style="font-size:1.3rem;color:var(--mid)">✕</button>
+    </div>
+    <div style="margin-bottom:1.2rem">
+      <h4 style="font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);margin-bottom:.7rem">Categories</h4>
+      <div class="filter-bar" id="category-filters"></div>
+    </div>
+    <div style="margin-bottom:1.2rem">
+      <h4 style="font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);margin-bottom:.7rem">Price (max KES)</h4>
+      <input type="range" id="price-max-mobile" min="500" max="5000" value="5000" step="100" style="width:100%;accent-color:var(--coral-d)"/>
+      <div style="display:flex;justify-content:space-between;font-size:.78rem;color:var(--mid);margin-top:.3rem">
+        <span>KES 500</span><span id="price-max-mobile-label">KES 5,000</span>
+      </div>
+    </div>
+    <div style="margin-bottom:1.5rem">
+      <div class="checkbox-wrap"><input type="checkbox" id="filter-instock-mob" checked/><label for="filter-instock-mob">In Stock Only</label></div>
+      <div class="checkbox-wrap"><input type="checkbox" id="filter-new-mob"/><label for="filter-new-mob">New Arrivals Only</label></div>
+    </div>
+    <button class="btn btn-dark" style="width:100%;justify-content:center" id="apply-mobile-filters">Apply Filters</button>
+  </div>
+</div>
+
+<!-- Bottom WA CTA -->
+<section style="background:var(--cream-d);padding:3.5rem 0">
+  <div class="container text-center">
+    <h2 class="title">Can't find what you're looking for?</h2>
+    <p class="subtitle" style="margin-bottom:1.4rem">Chat with us directly — we'll help you find the perfect outfit.</p>
+    <a href="https://wa.me/254794036128?text=Hello%20Terry%20Tender%20Wear,%20I%20need%20help%20finding%20a%20baby%20outfit!" target="_blank" rel="noopener" class="btn btn-dark btn-lg">💬 Chat on WhatsApp</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid-v2">
+      <div class="footer-col-brand">
+        <div class="footer-brand">Terry <span>Tender</span> Wear</div>
+        <p class="footer-tagline">Premium baby clothing crafted with love. Soft, safe, and simply adorable.</p>
+        <div class="footer-payment">
+          <span class="payment-badge">M-Pesa</span>
+          <span class="payment-badge">Bank Transfer</span>
+          <span class="payment-badge">Cash on Delivery</span>
+        </div>
+      </div>
+      <div><h4 class="footer-h">Shop</h4><ul class="footer-links">
+        <li><a href="products.html">All Products</a></li>
+        <li><a href="products.html?cat=Onesies">Onesies</a></li>
+        <li><a href="products.html?cat=Sets">Sets</a></li>
+        <li><a href="products.html?cat=Rompers">Rompers</a></li>
+      </ul></div>
+      <div><h4 class="footer-h">Help</h4><ul class="footer-links">
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="https://wa.me/254794036128" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+        <li><a href="admin-login.html">Admin Login</a></li>
+      </ul></div>
+      <div><h4 class="footer-h">Contact</h4><ul class="footer-links" style="gap:.8rem">
+        <li>📍 Nairobi, Kenya</li>
+        <li><a href="tel:+254794036128">📞 +254 794 036 128</a></li>
+        <li>⏰ Mon–Fri: 8AM–7PM</li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Terry Tender Wear. All rights reserved.</span>
+      <span>Made with 💗 in Kenya</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/254794036128" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="wa-float-pulse"></span>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="seo.js"></script>
+<script src="supabase-config.js"></script>
+<script src="db.js"></script>
+<script src="cart.js"></script>
+<script src="app.js"></script>
+<script>
+(function(){
+  // Nav cart
+  document.getElementById("nav-cart-btn").addEventListener("click", function(){ Cart.openDrawer(); });
+
+  // Promo close
+  var pb = document.getElementById("promo-banner");
+  document.getElementById("promo-close").addEventListener("click", function(){
+    pb.style.display="none"; sessionStorage.setItem("promo-closed","1");
+  });
+  if(sessionStorage.getItem("promo-closed")) pb.style.display="none";
+
+  // Sticky header
+  window.addEventListener("scroll", function(){
+    document.getElementById("site-header").classList.toggle("scrolled", window.scrollY > 60);
+  }, {passive:true});
+
+  // Mobile filter drawer
+  var drawer = document.getElementById("mobile-filter-drawer");
+  document.getElementById("mobile-filter-toggle").addEventListener("click", function(){
+    drawer.classList.add("open"); document.body.style.overflow="hidden";
+  });
+  document.getElementById("close-mobile-filter").addEventListener("click", function(){
+    drawer.classList.remove("open"); document.body.style.overflow="";
+  });
+  drawer.addEventListener("click", function(e){ if(e.target===drawer){ drawer.classList.remove("open"); document.body.style.overflow=""; } });
+  document.getElementById("apply-mobile-filters").addEventListener("click", function(){
+    drawer.classList.remove("open"); document.body.style.overflow="";
+  });
+
+  // Sidebar category buttons
+  document.querySelectorAll(".sidebar-cat-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      document.querySelectorAll(".sidebar-cat-btn").forEach(function(b){ b.classList.remove("active"); });
+      btn.classList.add("active");
+      // Also sync mobile filter-bar
+      var cat = btn.dataset.cat;
+      document.querySelectorAll("#category-filters .filter-btn").forEach(function(b){
+        b.classList.toggle("active", b.dataset.cat===cat);
+      });
+      window._shopSetCat && window._shopSetCat(cat);
+    });
+  });
+
+  // Price range
+  ["price-max","price-max-mobile"].forEach(function(id){
+    var el = document.getElementById(id);
+    if(!el) return;
+    var labelId = id+"-label";
+    el.addEventListener("input", function(){
+      var v = parseInt(el.value);
+      var label = document.getElementById(labelId);
+      if(label) label.textContent = "KES "+v.toLocaleString();
+      // sync both sliders
+      document.getElementById("price-max").value = v;
+      document.getElementById("price-max-mobile").value = v;
+      document.getElementById("price-max-label").textContent = "KES "+v.toLocaleString();
+      document.getElementById("price-max-mobile-label").textContent = "KES "+v.toLocaleString();
+      window._shopSetMaxPrice && window._shopSetMaxPrice(v);
+    });
+  });
+
+  // Availability checkboxes
+  ["filter-instock","filter-instock-mob"].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) el.addEventListener("change", function(){
+      document.getElementById("filter-instock").checked = el.checked;
+      document.getElementById("filter-instock-mob").checked = el.checked;
+      window._shopApply && window._shopApply();
+    });
+  });
+  ["filter-new","filter-new-mob"].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) el.addEventListener("change", function(){
+      document.getElementById("filter-new").checked = el.checked;
+      document.getElementById("filter-new-mob").checked = el.checked;
+      window._shopApply && window._shopApply();
+    });
+  });
+
+  // Clear filters
+  document.getElementById("clear-filters-btn").addEventListener("click", function(){
+    document.getElementById("price-max").value = 5000;
+    document.getElementById("price-max-mobile").value = 5000;
+    document.getElementById("price-max-label").textContent = "KES 5,000";
+    document.getElementById("price-max-mobile-label").textContent = "KES 5,000";
+    document.getElementById("filter-instock").checked = true;
+    document.getElementById("filter-instock-mob").checked = true;
+    document.getElementById("filter-new").checked = false;
+    document.getElementById("filter-new-mob").checked = false;
+    document.querySelectorAll(".sidebar-cat-btn").forEach(function(b){ b.classList.toggle("active", b.dataset.cat==="all"); });
+    window._shopSetCat && window._shopSetCat("all");
+    window._shopSetMaxPrice && window._shopSetMaxPrice(5000);
+  });
+
+  // Expose hooks for app.js to call back after products load
+  window._shopUpdateCounts = function(products){
+    var all = products;
+    var countEl = document.getElementById("count-all");
+    if(countEl) countEl.textContent = all.length;
+    ["Onesies","Sets","Rompers","Sleepwear","Dresses","Knitwear"].forEach(function(cat){
+      var el = document.getElementById("count-"+cat);
+      if(el) el.textContent = all.filter(function(p){ return p.category===cat; }).length;
+    });
+  };
+})();
+</script>
+</body>
+</html>

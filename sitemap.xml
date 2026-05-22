@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Terry Tender Wear — XML Sitemap
+  ================================
+  HOW TO USE:
+  1. Upload this file to your root domain: https://terrytenderwear.co.ke/sitemap.xml
+  2. Update the <loc> URLs below to match your actual domain
+  3. Submit to Google Search Console: https://search.google.com/search-console
+  4. Submit to Bing Webmaster Tools: https://www.bing.com/webmasters
+
+  UPDATE THE DOMAIN: Replace "https://terrytenderwear.co.ke" with your real domain.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- HOME PAGE — Highest priority -->
+  <url>
+    <loc>https://terrytenderwear.co.ke/</loc>
+    <lastmod>2025-05-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1519689680058-324335c77eba?w=1200&amp;q=80</image:loc>
+      <image:title>Terry Tender Wear — Premium Baby Clothing Kenya</image:title>
+      <image:caption>Premium baby clothing crafted with love in Kenya</image:caption>
+    </image:image>
+  </url>
+
+  <!-- SHOP / PRODUCTS PAGE -->
+  <url>
+    <loc>https://terrytenderwear.co.ke/products.html</loc>
+    <lastmod>2025-05-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1522771930-78848d9293e8?w=800&amp;q=80</image:loc>
+      <image:title>Baby Onesies — Terry Tender Wear Kenya</image:title>
+    </image:image>
+  </url>
+
+  <!-- CATEGORY PAGES (virtual via URL params) -->
+  <url>
+    <loc>https://terrytenderwear.co.ke/products.html?cat=Onesies</loc>
+    <lastmod>2025-05-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://terrytenderwear.co.ke/products.html?cat=Sets</loc>
+    <lastmod>2025-05-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://terrytenderwear.co.ke/products.html?cat=Rompers</loc>
+    <lastmod>2025-05-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://terrytenderwear.co.ke/products.html?cat=Sleepwear</loc>
+    <lastmod>2025-05-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://terrytenderwear.co.ke/products.html?cat=Dresses</loc>
+    <lastmod>2025-05-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://terrytenderwear.co.ke/products.html?cat=Knitwear</loc>
+    <lastmod>2025-05-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ABOUT PAGE -->
+  <url>
+    <loc>https://terrytenderwear.co.ke/about.html</loc>
+    <lastmod>2025-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- CONTACT PAGE -->
+  <url>
+    <loc>https://terrytenderwear.co.ke/contact.html</loc>
+    <lastmod>2025-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- SUPABASE GUIDE (noindex in robots.txt but included for completeness) -->
+  <url>
+    <loc>https://terrytenderwear.co.ke/SUPABASE_GUIDE.html</loc>
+    <lastmod>2025-05-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.10</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Story — Terry Tender Wear | Premium Baby Clothing Kenya Since 2021</title>
+  <meta name="description" content="The story behind Terry Tender Wear — premium baby clothing founded by a Kenyan mother with a mission to dress every baby in softness and love."/>
+  <!-- ══ SEO: Primary Meta Tags ══ -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+  <meta name="keywords" content="Terry Tender Wear story, Kenyan baby clothing brand, about Terry Tender Wear, hypoallergenic baby clothes Kenya, safe baby clothing Kenya, baby clothing brand Nairobi"/>
+  <meta name="author" content="Terry Tender Wear"/>
+  <meta name="theme-color" content="var(--coral)"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-title" content="Terry Tender Wear"/>
+  <link rel="canonical" href="https://terrytenderwear.co.ke/about.html"/>
+
+  <!-- ══ SEO: Open Graph ══ -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://terrytenderwear.co.ke/about.html"/>
+  <meta property="og:site_name" content="Terry Tender Wear"/>
+  <meta property="og:locale" content="en_KE"/>
+  <meta property="og:title" content="Our Story — Terry Tender Wear | Founded in Kenya 2021"/>
+  <meta property="og:description" content="Founded by a Kenyan mother in 2021. 500+ families served. Premium baby clothing crafted with hypoallergenic fabrics and pure love."/>
+  <meta property="og:image" content="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=1200&h=630&auto=format&fit=crop&q=80"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:alt" content="Our Story — Terry Tender Wear | Founded in Kenya 2021"/>
+
+  <!-- ══ SEO: Twitter Card ══ -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@TerryTenderWear"/>
+  <meta name="twitter:title" content="Our Story — Terry Tender Wear | Founded in Kenya 2021"/>
+  <meta name="twitter:description" content="Founded by a Kenyan mother in 2021. 500+ families served. Premium baby clothing crafted with hypoallergenic fabrics and pure love."/>
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=1200&h=630&auto=format&fit=crop&q=80"/>
+
+  <!-- ══ SEO: Performance ══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net"/>
+  <link rel="dns-prefetch" href="https://wa.me"/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👶</text></svg>"/>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* Timeline */
+    .timeline{position:relative;padding:3rem 0}
+    .timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;
+                      width:2px;background:var(--line);transform:translateX(-50%)}
+    .timeline-item{display:grid;grid-template-columns:1fr 60px 1fr;gap:1.5rem;
+                   align-items:center;margin-bottom:3rem}
+    .timeline-item:nth-child(odd) .timeline-content{grid-column:1;text-align:right}
+    .timeline-item:nth-child(odd) .timeline-empty{grid-column:3}
+    .timeline-item:nth-child(even) .timeline-content{grid-column:3;text-align:left}
+    .timeline-item:nth-child(even) .timeline-empty{grid-column:1}
+    .timeline-dot{grid-column:2;width:48px;height:48px;border-radius:50%;
+                  background:var(--charcoal);color:var(--cream);
+                  display:flex;align-items:center;justify-content:center;
+                  font-family:var(--font-d);font-weight:700;font-size:.88rem;
+                  box-shadow:0 0 0 4px var(--white),0 0 0 6px var(--line);z-index:1}
+    .timeline-content{background:var(--white);border-radius:var(--r-md);
+                       padding:1.5rem;box-shadow:var(--sh-sm)}
+    .timeline-year{font-size:.72rem;font-weight:700;letter-spacing:.1em;
+                   text-transform:uppercase;color:var(--coral-d);margin-bottom:.4rem}
+    .timeline-content h3{font-family:var(--font-d);font-size:1.05rem;
+                          color:var(--charcoal);margin-bottom:.4rem}
+    .timeline-content p{font-size:.82rem;color:var(--mid);line-height:1.7}
+
+    /* Certifications */
+    .cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.2rem}
+    .cert-card{background:var(--white);border-radius:var(--r-md);padding:1.5rem;
+               text-align:center;box-shadow:var(--sh-sm);border:1.5px solid var(--line)}
+    .cert-icon{font-size:2.5rem;margin-bottom:.8rem}
+    .cert-card h4{font-family:var(--font-d);font-size:.95rem;color:var(--charcoal);margin-bottom:.3rem}
+    .cert-card p{font-size:.75rem;color:var(--mid);line-height:1.6}
+
+    /* Press / features */
+    .press-grid{display:flex;align-items:center;justify-content:center;
+                flex-wrap:wrap;gap:2rem;padding:2rem 0}
+    .press-item{font-family:var(--font-d);font-size:1.1rem;font-weight:700;
+                color:var(--mid);opacity:.6;letter-spacing:-.01em}
+
+    @media(max-width:640px){
+      .timeline::before{left:24px}
+      .timeline-item{grid-template-columns:48px 1fr;gap:1rem}
+      .timeline-item:nth-child(odd) .timeline-content,
+      .timeline-item:nth-child(even) .timeline-content{grid-column:2;text-align:left}
+      .timeline-item .timeline-empty{display:none}
+      .timeline-dot{grid-column:1}
+    }
+  </style>
+</head>
+<body>
+
+<script>
+/* ── Inline nav init — runs immediately, no dependency on app.js ── */
+(function(){
+  function initNav(){
+    var toggle = document.getElementById('nav-toggle');
+    var links  = document.getElementById('nav-links');
+    if(!toggle || !links) return;
+    
+    toggle.addEventListener('click', function(){
+      var isOpen = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-active', isOpen);
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    
+    // Close on link click
+    links.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        links.classList.remove('is-open');
+        toggle.classList.remove('is-active');
+        toggle.setAttribute('aria-expanded','false');
+        document.body.style.overflow = '';
+      });
+    });
+    
+    // Close on outside click
+    document.addEventListener('click', function(e){
+      if(links.classList.contains('is-open') && 
+         !toggle.contains(e.target) && 
+         !links.contains(e.target)){
+        links.classList.remove('is-open');
+        toggle.classList.remove('is-active');
+        toggle.setAttribute('aria-expanded','false');
+        document.body.style.overflow = '';
+      }
+    });
+
+    // Sticky header on scroll
+    var header = document.getElementById('site-header');
+    if(header){
+      window.addEventListener('scroll', function(){
+        header.classList.toggle('scrolled', window.scrollY > 60);
+      }, {passive:true});
+    }
+  }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initNav);
+  } else {
+    initNav();
+  }
+})();
+</script>
+
+<!-- PROMO BANNER -->
+<div class="promo-banner" id="promo-banner">
+  <p>🎉 <strong>Free Delivery</strong> on orders over KES 3,000 · Order instantly on WhatsApp</p>
+  <button class="promo-close" id="promo-close">✕</button>
+</div>
+
+<!-- NAV -->
+<header class="site-header" id="site-header">
+  <nav class="container nav-inner">
+    <a href="index.html" class="nav-logo">Terry <span>Tender</span> Wear</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Shop</a></li>
+      <li><a href="about.html" class="active">Our Story</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="nav-cart-btn" id="nav-cart-btn" aria-label="Open cart">
+        🛒<span class="cart-count" id="cart-count-nav"></span>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-band">
+  <h1>Our Story</h1>
+  <p>Where every thread is woven with intention and love</p>
+</div>
+
+<!-- BRAND STORY -->
+<section class="container about-grid">
+  <div class="about-imgs">
+    <img class="about-img-main" src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&h=750&auto=format&fit=crop&q=80" alt="Terry Tender Wear baby clothing"/ loading="lazy" decoding="async">
+    <img class="about-img-mini" src="https://images.unsplash.com/photo-1522771930-78848d9293e8?w=300&h=300&auto=format&fit=crop&q=80" alt="Soft baby onesie"/ loading="lazy" decoding="async">
+  </div>
+  <div>
+    <span class="eyebrow">✦ Est. 2021 · Nairobi, Kenya</span>
+    <h2 class="title" style="margin-bottom:1rem">Born from a mother's impossible search</h2>
+    <p class="about-lead">Terry Tender Wear started with a simple, urgent question: <em>"Why can't I find baby clothing in Kenya that is both beautiful and truly gentle on my daughter's skin?"</em></p>
+    <p style="color:var(--mid);line-height:1.9;margin-bottom:1rem">After months of buying itchy, poorly-made local clothing and expensive imported pieces that didn't suit the Kenyan climate, founder Terry decided to build the solution herself. She spent a year sourcing hypoallergenic fabrics, studying baby garment construction, and testing every piece on her own daughter before selling a single item.</p>
+    <p style="color:var(--mid);line-height:1.9;margin-bottom:2rem">Today, Terry Tender Wear dresses babies across all 47 counties of Kenya. We remain a small, personal business — and we plan to keep it that way. Every order is personally reviewed. Every customer is known by name.</p>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap">
+      <a href="products.html" class="btn btn-dark">Shop the Collection</a>
+      <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="stats-strip-grid">
+      <div class="stats-strip-item">
+        <div class="stats-strip-num" data-target="500">0</div>
+        <div class="stats-strip-plus">+</div>
+        <div class="stats-strip-label">Families Served</div>
+      </div>
+      <div class="stats-strip-item">
+        <div class="stats-strip-num" data-target="47">0</div>
+        <div class="stats-strip-plus"> Counties</div>
+        <div class="stats-strip-label">Nationwide Reach</div>
+      </div>
+      <div class="stats-strip-item">
+        <div class="stats-strip-num" data-target="4">0</div>
+        <div class="stats-strip-plus"> Years</div>
+        <div class="stats-strip-label">Of Excellence</div>
+      </div>
+      <div class="stats-strip-item">
+        <div class="stats-strip-num" data-target="99">0</div>
+        <div class="stats-strip-plus">%</div>
+        <div class="stats-strip-label">Happy Customers</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- OUR VALUES -->
+<section class="section" style="background:var(--cream-d)">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:2.5rem">
+      <span class="eyebrow">✦ What Drives Us</span>
+      <h2 class="title">Our Values</h2>
+      <p class="subtitle">The principles behind every stitch</p>
+    </div>
+    <div class="values-grid">
+      <div class="val-card"><div class="val-icon">🌿</div><h3>Baby-Safe Fabrics</h3><p>Every fabric is hypoallergenic, free from AZO dyes and harmful chemicals. Tested for pH levels safe for newborn skin.</p></div>
+      <div class="val-card"><div class="val-icon">✂️</div><h3>Purposeful Design</h3><p>Flat seams prevent irritation. Stretchy necklines for easy dressing. Snap closures for quick nappy changes. Every detail is deliberate.</p></div>
+      <div class="val-card"><div class="val-icon">♻️</div><h3>Built to Last</h3><p>Designed to survive 50+ washes without pilling, shrinking or fading. Quality you can hand down to the next child.</p></div>
+      <div class="val-card"><div class="val-icon">🇰🇪</div><h3>Proudly Kenyan</h3><p>Founded in Nairobi by a Kenyan mother. We understand local families, local budgets, and what Kenyan babies truly need.</p></div>
+      <div class="val-card"><div class="val-icon">💬</div><h3>Personal Service</h3><p>No bots. No call centres. When you WhatsApp us, a real person replies — usually within 5 minutes during business hours.</p></div>
+      <div class="val-card"><div class="val-icon">💗</div><h3>Made with Love</h3><p>From the first fabric choice to the final package seal, every decision is made with love for the babies who will wear our clothes.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY TIMELINE -->
+<section class="section">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:2rem">
+      <span class="eyebrow">✦ Our Journey</span>
+      <h2 class="title">From an Idea to Kenya's Most Loved Baby Brand</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-year">2021 — The Beginning</div>
+          <h3>The First Stitch</h3>
+          <p>Terry spends a year sourcing fabrics, testing materials and hand-making the first 20 pieces for her daughter. Friends and family see the quality and start asking to buy.</p>
+        </div>
+        <div class="timeline-dot">21</div>
+        <div class="timeline-empty"></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-empty"></div>
+        <div class="timeline-dot">22</div>
+        <div class="timeline-content">
+          <div class="timeline-year">2022 — Going Public</div>
+          <h3>First 100 Customers</h3>
+          <p>Terry Tender Wear launches publicly on WhatsApp. Word spreads through mum groups across Nairobi. The first 100 orders arrive within 3 months.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-year">2023 — Nationwide</div>
+          <h3>Delivery Across Kenya</h3>
+          <p>We partner with reliable courier services to offer nationwide delivery. Orders arrive in Kisumu, Mombasa, Eldoret and beyond. The family grows to 300+ customers.</p>
+        </div>
+        <div class="timeline-dot">23</div>
+        <div class="timeline-empty"></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-empty"></div>
+        <div class="timeline-dot">24</div>
+        <div class="timeline-content">
+          <div class="timeline-year">2024 — Recognition</div>
+          <h3>500 Families & Growing</h3>
+          <p>Terry Tender Wear reaches 500 families served, 200+ five-star reviews, and launches its online store. Named one of Nairobi's most trusted baby brands by local mum communities.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-year">2025 — The Future</div>
+          <h3>New Collections, Same Heart</h3>
+          <p>Launching seasonal collections, a loyalty rewards programme, and a gift concierge service. The mission stays the same: dress every Kenyan baby in the very best.</p>
+        </div>
+        <div class="timeline-dot">25</div>
+        <div class="timeline-empty"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS & TRUST -->
+<section class="section" style="background:var(--cream-d)">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:2.5rem">
+      <span class="eyebrow">✦ Our Commitment</span>
+      <h2 class="title">Safety You Can Trust</h2>
+      <p class="subtitle">Every standard we meet is one your baby deserves</p>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <div class="cert-icon">🧪</div>
+        <h4>pH Tested</h4>
+        <p>All fabrics tested for safe pH levels (4.0–7.5) for baby skin</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🚫</div>
+        <h4>AZO-Free Dyes</h4>
+        <p>No harmful azo dyes. Colours are fixed safely and won't bleed onto skin</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🌡️</div>
+        <h4>Colourfast at 40°C</h4>
+        <p>All items machine washable at 40°C without colour loss or shrinkage</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">✋</div>
+        <h4>No Formaldehyde</h4>
+        <p>Zero formaldehyde or chemical finishing agents used in our fabrics</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🤱</div>
+        <h4>Dermatologist Reviewed</h4>
+        <p>Fabric selection reviewed by a certified dermatologist for baby-skin suitability</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">⭐</div>
+        <h4>4.9★ Customer Rating</h4>
+        <p>Rated 4.9 out of 5 across 200+ verified customer reviews</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER NOTE -->
+<section class="section">
+  <div class="container">
+    <div class="founder-grid">
+      <div>
+        <span class="eyebrow" style="display:inline-flex;margin-bottom:1.4rem">✦ From the Founder</span>
+        <h2 class="title" style="margin-bottom:1rem">A personal note from Terry</h2>
+        <p class="about-lead">"Every morning I remind myself: somewhere in Kenya, a baby is wearing one of our pieces today. That thought keeps every standard impossibly high."</p>
+        <p style="color:var(--mid);line-height:1.9;margin-bottom:1rem">Building Terry Tender Wear has been the greatest challenge and the greatest joy of my life. I started this not to build a business, but to solve a problem I felt personally — and I quickly discovered thousands of other Kenyan mothers felt the same way.</p>
+        <p style="color:var(--mid);line-height:1.9;margin-bottom:1rem">We are small on purpose. I want to know every customer. I want to reply personally on WhatsApp. I want to know the name of your baby. That's the kind of business I'm proud to run.</p>
+        <p style="color:var(--mid);line-height:1.9;margin-bottom:1.5rem">Thank you for trusting us with your most precious person.</p>
+        <p style="font-family:var(--font-d);font-size:1.4rem;font-style:italic;color:var(--coral-d)">— Terry, Founder & CEO</p>
+        <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
+          <a href="products.html" class="btn btn-dark">Shop Now</a>
+          <a href="contact.html" class="btn btn-outline">Say Hello</a>
+        </div>
+      </div>
+      <div class="founder-graphic">👶</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRESS / COMMUNITY -->
+<section style="background:var(--cream-d);padding:3rem 0">
+  <div class="container text-center">
+    <p style="font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);margin-bottom:1.5rem">Loved by Kenyan Mum Communities</p>
+    <div class="press-grid">
+      <span class="press-item">Nairobi Mums Network</span>
+      <span class="press-item">Kenya Baby Essentials</span>
+      <span class="press-item">Modern Kenyan Parent</span>
+      <span class="press-item">Eastlands Mums Group</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid-v2">
+      <div class="footer-col-brand">
+        <div class="footer-brand">Terry <span>Tender</span> Wear</div>
+        <p class="footer-tagline">Premium baby clothing crafted with love. Soft, safe, and simply adorable.</p>
+        <div class="footer-payment">
+          <span class="payment-badge">M-Pesa</span>
+          <span class="payment-badge">Bank Transfer</span>
+          <span class="payment-badge">Cash on Delivery</span>
+        </div>
+      </div>
+      <div><h4 class="footer-h">Shop</h4><ul class="footer-links">
+        <li><a href="products.html">All Products</a></li>
+        <li><a href="products.html?cat=Onesies">Onesies</a></li>
+        <li><a href="products.html?cat=Sets">Sets</a></li>
+      </ul></div>
+      <div><h4 class="footer-h">Help</h4><ul class="footer-links">
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="https://wa.me/254794036128" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+        <li><a href="admin-login.html">Admin Login</a></li>
+      </ul></div>
+      <div><h4 class="footer-h">Contact</h4><ul class="footer-links" style="gap:.8rem">
+        <li>📍 Nairobi, Kenya</li>
+        <li><a href="tel:+254794036128">📞 +254 794 036 128</a></li>
+        <li>⏰ Mon–Fri 8AM–7PM</li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Terry Tender Wear. All rights reserved.</span>
+      <span>Made with 💗 in Kenya</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/254794036128" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="wa-float-pulse"></span>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="seo.js"></script>
+<script src="supabase-config.js"></script>
+<script src="db.js"></script>
+<script src="cart.js"></script>
+<script src="app.js"></script>
+<script>
+  document.getElementById("nav-cart-btn").addEventListener("click", function(){ Cart.openDrawer(); });
+  var pb=document.getElementById("promo-banner");
+  document.getElementById("promo-close").addEventListener("click",function(){ pb.style.display="none"; sessionStorage.setItem("promo-closed","1"); });
+  if(sessionStorage.getItem("promo-closed")) pb.style.display="none";
+  window.addEventListener("scroll",function(){ document.getElementById("site-header").classList.toggle("scrolled",window.scrollY>60); },{passive:true});
+
+  // Animate counters
+  var observed=false;
+  var strip=document.querySelector(".stats-strip");
+  if(strip){
+    var obs=new IntersectionObserver(function(entries){
+      if(entries[0].isIntersecting&&!observed){
+        observed=true;
+        document.querySelectorAll(".stats-strip-num[data-target]").forEach(function(el){
+          var target=parseInt(el.dataset.target,10),current=0,step=target/100;
+          var interval=setInterval(function(){ current+=step; if(current>=target){current=target;clearInterval(interval);} el.textContent=Math.floor(current); },16);
+        });
+      }
+    },{threshold:0.3});
+    obs.observe(strip);
+  }
+</script>
+</body>
+</html>

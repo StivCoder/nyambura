@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terry Tender Wear — Premium Baby Clothing Kenya | KES 1,200+</title>
+  <meta name="description" content="Kenya's most loved premium baby clothing store. Soft onesies, rompers, sets & more. 500+ happy families. Order via WhatsApp. Free delivery over KES 3,000."/>
+  <!-- ══ SEO: Primary Meta Tags ══ -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+  <meta name="keywords" content="baby clothing Kenya, baby clothes Nairobi, premium baby wear Kenya, onesies Kenya, baby rompers Kenya, baby sets Kenya, Terry Tender Wear, baby sleepwear Kenya, newborn clothes Kenya, baby gift Kenya, soft baby clothes, hypoallergenic baby clothing"/>
+  <meta name="author" content="Terry Tender Wear"/>
+  <meta name="theme-color" content="var(--coral)"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+  <meta name="apple-mobile-web-app-title" content="Terry Tender Wear"/>
+  <link rel="canonical" href="https://terrytenderwear.co.ke/"/>
+
+  <!-- ══ SEO: Open Graph / Facebook ══ -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://terrytenderwear.co.ke/"/>
+  <meta property="og:site_name" content="Terry Tender Wear"/>
+  <meta property="og:locale" content="en_KE"/>
+  <meta property="og:image" content="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=1200&h=630&auto=format&fit=crop&q=80"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:alt" content="Terry Tender Wear — Premium Baby Clothing Kenya"/>
+
+  <!-- ══ SEO: Twitter / X Card ══ -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@TerryTenderWear"/>
+  <meta name="twitter:creator" content="@TerryTenderWear"/>
+  <meta name="twitter:title" content="Terry Tender Wear — Premium Baby Clothing Kenya"/>
+  <meta name="twitter:description" content="Kenya's most loved premium baby clothing store. Soft, safe and simply adorable. Order instantly via WhatsApp."/>
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=1200&h=630&auto=format&fit=crop&q=80"/>
+
+  <!-- ══ SEO: Performance & Preload ══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net"/>
+  <link rel="preconnect" href="https://images.unsplash.com"/>
+  <link rel="dns-prefetch" href="https://wa.me"/>
+
+  <!-- ══ SEO: Favicon (inline SVG fallback) ══ -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👶</text></svg>"/>
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👶</text></svg>"/>
+
+  <!-- ══ SEO: Structured Data loaded via seo.js ══ -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<script>
+/* ── Inline nav init — runs immediately, no dependency on app.js ── */
+(function(){
+  function initNav(){
+    var toggle = document.getElementById('nav-toggle');
+    var links  = document.getElementById('nav-links');
+    if(!toggle || !links) return;
+    
+    toggle.addEventListener('click', function(){
+      var isOpen = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-active', isOpen);
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    
+    // Close on link click
+    links.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        links.classList.remove('is-open');
+        toggle.classList.remove('is-active');
+        toggle.setAttribute('aria-expanded','false');
+        document.body.style.overflow = '';
+      });
+    });
+    
+    // Close on outside click
+    document.addEventListener('click', function(e){
+      if(links.classList.contains('is-open') && 
+         !toggle.contains(e.target) && 
+         !links.contains(e.target)){
+        links.classList.remove('is-open');
+        toggle.classList.remove('is-active');
+        toggle.setAttribute('aria-expanded','false');
+        document.body.style.overflow = '';
+      }
+    });
+
+    // Sticky header on scroll
+    var header = document.getElementById('site-header');
+    if(header){
+      window.addEventListener('scroll', function(){
+        header.classList.toggle('scrolled', window.scrollY > 60);
+      }, {passive:true});
+    }
+  }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initNav);
+  } else {
+    initNav();
+  }
+})();
+</script>
+
+
+<!-- ══ PROMO BANNER ══════════════════════════════════════════ -->
+<div class="promo-banner" id="promo-banner">
+  <p>🎉 <strong>Free Delivery</strong> on orders over KES 3,000 · <strong>Gift wrapping</strong> available · <span id="promo-countdown"></span></p>
+  <button class="promo-close" id="promo-close" aria-label="Close">✕</button>
+</div>
+
+<!-- ══ HEADER ════════════════════════════════════════════════ -->
+<header class="site-header" id="site-header">
+  <nav class="container nav-inner">
+    <a href="index.html" class="nav-logo">Terry <span>Tender</span> Wear</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="products.html">Shop</a></li>
+      <li><a href="about.html">Our Story</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="nav-cart-btn" id="nav-cart-btn" aria-label="Open shopping cart">
+        🛒<span class="cart-count" id="cart-count-nav"></span>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ══ HERO ══════════════════════════════════════════════════ -->
+<section class="hero-v2">
+  <div class="hero-v2-bg" aria-hidden="true"></div>
+  <div class="container hero-v2-inner">
+    <div class="hero-v2-content">
+      <div class="hero-trust-pill">
+        <span class="trust-stars">★★★★★</span>
+        <span>Trusted by <strong>500+ Kenyan families</strong></span>
+      </div>
+      <h1 class="hero-v2-title">Your Baby Deserves<br><em>the Very Best</em></h1>
+      <p class="hero-v2-desc">Premium baby clothing made from the softest, safest fabrics. Designed in Kenya, loved across the country. Order in seconds on WhatsApp.</p>
+      <div class="hero-v2-actions">
+        <a href="products.html" class="btn btn-dark btn-lg">Shop Now → </a>
+        <a href="https://wa.me/254794036128?text=Hello%20Terry%20Tender%20Wear!" target="_blank" rel="noopener noreferrer" class="btn btn-wa-hero">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div class="hero-v2-badges">
+        <div class="hero-badge">🌿 Hypoallergenic Fabrics</div>
+        <div class="hero-badge">🚚 Nationwide Delivery</div>
+        <div class="hero-badge">💳 M-Pesa Accepted</div>
+      </div>
+    </div>
+    <div class="hero-v2-visual">
+      <div class="hero-v2-img-wrap">
+        <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=700&h=875&auto=format&fit=crop&q=80" alt="Happy baby in Terry Tender Wear clothing" class="hero-v2-main-img"/ loading="lazy" decoding="async">
+        <div class="hero-float-card">
+          <div class="float-card-icon">🛍️</div>
+          <div>
+            <div class="float-card-label">Latest Order</div>
+            <div class="float-card-val">Rosebud Onesie · Nairobi</div>
+          </div>
+        </div>
+        <div class="hero-float-card hero-float-card--2">
+          <div class="float-card-icon">⭐</div>
+          <div>
+            <div class="float-card-label">5-Star Reviews</div>
+            <div class="float-card-val">200+ happy mums</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Scroll hint -->
+  <div class="scroll-hint" aria-hidden="true">
+    <div class="scroll-hint-dot"></div>
+  </div>
+</section>
+
+<!-- ══ MARQUEE ════════════════════════════════════════════════ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">Free delivery over KES 3,000</span>
+    <span class="marquee-item">100% baby-safe fabrics</span>
+    <span class="marquee-item">Instant WhatsApp ordering</span>
+    <span class="marquee-item">Gift wrapping available</span>
+    <span class="marquee-item">New arrivals every week</span>
+    <span class="marquee-item">M-Pesa payments accepted</span>
+    <span class="marquee-item">Trusted by 500+ families</span>
+    <span class="marquee-item">Free returns within 7 days</span>
+    <span class="marquee-item">Free delivery over KES 3,000</span>
+    <span class="marquee-item">100% baby-safe fabrics</span>
+    <span class="marquee-item">Instant WhatsApp ordering</span>
+    <span class="marquee-item">Gift wrapping available</span>
+    <span class="marquee-item">New arrivals every week</span>
+    <span class="marquee-item">M-Pesa payments accepted</span>
+    <span class="marquee-item">Trusted by 500+ families</span>
+    <span class="marquee-item">Free returns within 7 days</span>
+  </div>
+</div>
+
+<!-- ══ ANIMATED STATS ══════════════════════════════════════════ -->
+<section class="stats-strip section-sm">
+  <div class="container">
+    <div class="stats-strip-grid">
+      <div class="stats-strip-item">
+        <div class="stats-strip-num" data-target="500">0</div>
+        <div class="stats-strip-plus">+</div>
+        <div class="stats-strip-label">Happy Families</div>
+      </div>
+      <div class="stats-strip-item">
+        <div class="stats-strip-num" data-target="200">0</div>
+        <div class="stats-strip-plus">+</div>
+        <div class="stats-strip-label">5-Star Reviews</div>
+      </div>
+      <div class="stats-strip-item">
+        <div class="stats-strip-num" data-target="4">0</div>
+        <div class="stats-strip-plus"> Years</div>
+        <div class="stats-strip-label">Trusted Since 2021</div>
+      </div>
+      <div class="stats-strip-item">
+        <div class="stats-strip-num" data-target="47">0</div>
+        <div class="stats-strip-plus"> Counties</div>
+        <div class="stats-strip-label">Nationwide Delivery</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NEW ARRIVALS ════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-top-row">
+      <div>
+        <span class="eyebrow">✦ Just Dropped</span>
+        <h2 class="title">New Arrivals</h2>
+        <p class="subtitle">Fresh styles your baby will love this season</p>
+      </div>
+      <a href="products.html" class="btn btn-outline btn-sm">View All →</a>
+    </div>
+    <div class="products-grid" id="new-arrivals-grid">
+      <div class="skeleton skeleton-card"></div>
+      <div class="skeleton skeleton-card"></div>
+      <div class="skeleton skeleton-card"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CATEGORY BROWSE ════════════════════════════════════════ -->
+<section class="section" style="background:var(--cream-d)">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:2.5rem">
+      <span class="eyebrow">✦ Browse by Category</span>
+      <h2 class="title">Shop the Collection</h2>
+      <p class="subtitle">Find exactly what your little one needs</p>
+    </div>
+    <div class="category-browse-grid">
+      <a href="products.html?cat=Onesies" class="cat-card" style="--cat-color:var(--coral)">
+        <div class="cat-card-img"><img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?w=400&h=400&auto=format&fit=crop&q=80" alt="Onesies"/ loading="lazy" decoding="async"></div>
+        <div class="cat-card-body"><h3>Onesies</h3><p>Newborn to 24m</p><span class="cat-card-link">Shop →</span></div>
+      </a>
+      <a href="products.html?cat=Sets" class="cat-card" style="--cat-color:var(--mint)">
+        <div class="cat-card-img"><img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=400&h=400&auto=format&fit=crop&q=80" alt="Sets"/ loading="lazy" decoding="async"></div>
+        <div class="cat-card-body"><h3>Matching Sets</h3><p>Coordinated looks</p><span class="cat-card-link">Shop →</span></div>
+      </a>
+      <a href="products.html?cat=Rompers" class="cat-card" style="--cat-color:#D4A5A5">
+        <div class="cat-card-img"><img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&auto=format&fit=crop&q=80" alt="Rompers"/ loading="lazy" decoding="async"></div>
+        <div class="cat-card-body"><h3>Rompers</h3><p>Play-ready comfort</p><span class="cat-card-link">Shop →</span></div>
+      </a>
+      <a href="products.html?cat=Sleepwear" class="cat-card" style="--cat-color:#A8C5DA">
+        <div class="cat-card-img"><img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400&h=400&auto=format&fit=crop&q=80" alt="Sleepwear"/ loading="lazy" decoding="async"></div>
+        <div class="cat-card-body"><h3>Sleepwear</h3><p>Cosy nights</p><span class="cat-card-link">Shop →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TRUST STRIP ════════════════════════════════════════════ -->
+<section class="trust-strip">
+  <div class="container">
+    <div class="trust-strip-grid">
+      <div class="trust-item">
+        <div class="trust-icon">🌿</div>
+        <div><strong>Hypoallergenic</strong><p>Dermatologist tested & approved for sensitive baby skin</p></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🔄</div>
+        <div><strong>Easy Returns</strong><p>7-day hassle-free returns — no questions asked</p></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">📦</div>
+        <div><strong>Safe Packaging</strong><p>Every order gift-wrapped in our signature packaging</p></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">💬</div>
+        <div><strong>WhatsApp Support</strong><p>Real person replies within 5 minutes during business hours</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CUSTOMER REVIEWS ════════════════════════════════════════ -->
+<section class="section reviews-section">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:1rem">
+      <span class="eyebrow">✦ Real Mums, Real Love</span>
+      <h2 class="title">What Our Customers Say</h2>
+      <div class="reviews-overall">
+        <div class="reviews-stars">★★★★★</div>
+        <div class="reviews-score">4.9 <span>out of 5</span></div>
+        <div class="reviews-count">Based on 214 reviews</div>
+      </div>
+      <!-- Rating bars -->
+      <div class="rating-bars">
+        <div class="rating-bar-row"><span>5★</span><div class="rating-bar"><div class="rating-bar-fill" style="width:91%"></div></div><span>91%</span></div>
+        <div class="rating-bar-row"><span>4★</span><div class="rating-bar"><div class="rating-bar-fill" style="width:6%"></div></div><span>6%</span></div>
+        <div class="rating-bar-row"><span>3★</span><div class="rating-bar"><div class="rating-bar-fill" style="width:2%;background:var(--mint)"></div></div><span>2%</span></div>
+        <div class="rating-bar-row"><span>2★</span><div class="rating-bar"><div class="rating-bar-fill" style="width:1%;background:var(--mint)"></div></div><span>1%</span></div>
+        <div class="rating-bar-row"><span>1★</span><div class="rating-bar"><div class="rating-bar-fill" style="width:0%;background:#ddd"></div></div><span>0%</span></div>
+      </div>
+    </div>
+
+    <!-- Auto-scrolling review carousel -->
+    <div class="reviews-carousel-wrap">
+      <button class="review-nav review-nav--prev" id="rev-prev" aria-label="Previous review">‹</button>
+      <div class="reviews-carousel" id="reviews-carousel">
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar" style="background:var(--coral)">WN</div>
+            <div>
+              <div class="review-name">Wanjiku Njoroge</div>
+              <div class="review-location">📍 Nairobi, Westlands</div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">"Honestly the softest baby clothes I have ever bought in Kenya. My daughter's skin is very sensitive and she had zero reactions to these fabrics. I ordered the Rosebud Onesie set and it arrived beautifully packaged. Will definitely be ordering again for her birthday!"</p>
+          <div class="review-product">✓ Verified Purchase · Rosebud Onesie Set</div>
+          <div class="review-date">2 weeks ago</div>
+        </div>
+
+        <div class="review-card review-card--featured">
+          <div class="review-featured-badge">⭐ Top Review</div>
+          <div class="review-header">
+            <div class="review-avatar" style="background:var(--mint);color:#fff">AK</div>
+            <div>
+              <div class="review-name">Amina Kariuki</div>
+              <div class="review-location">📍 Mombasa</div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">"I discovered Terry Tender Wear on WhatsApp and I am so glad I did! The Sage Snuggle Set looks even better in person — the photos don't do it justice. My twins looked absolutely adorable at their naming ceremony. Everyone was asking where I got the outfits. Quality that rivals imported brands at a fraction of the cost. 10/10!"</p>
+          <div class="review-product">✓ Verified Purchase · Sage Snuggle Set (×2)</div>
+          <div class="review-date">1 month ago</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar" style="background:#D4A5A5">FM</div>
+            <div>
+              <div class="review-name">Faith Mutua</div>
+              <div class="review-location">📍 Kisumu</div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">"Fast delivery to Kisumu — I ordered on Monday and it arrived Wednesday! The packaging was beautiful and felt like opening a gift. The Cloud Knit Romper is insanely soft. My son sleeps so much better in it. Customer service on WhatsApp was so responsive and helpful."</p>
+          <div class="review-product">✓ Verified Purchase · Cloud Knit Romper</div>
+          <div class="review-date">3 weeks ago</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar" style="background:var(--coral)">CM</div>
+            <div>
+              <div class="review-name">Caroline Mwangi</div>
+              <div class="review-location">📍 Nakuru</div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">"Bought the Petal Soft Sleepsuit for my newborn and it has been a game changer for nighttime. She sleeps longer and I think it's because she's so comfortable! The sizing is true to guide and the quality after 10+ washes is still perfect. No pilling, no shrinking."</p>
+          <div class="review-product">✓ Verified Purchase · Petal Soft Sleepsuit</div>
+          <div class="review-date">5 weeks ago</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar" style="background:#A8C5DA;color:#333">JO</div>
+            <div>
+              <div class="review-name">Janet Odhiambo</div>
+              <div class="review-location">📍 Eldoret</div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">"I was hesitant at first ordering baby clothes online but Terry Tender Wear completely won me over. The WhatsApp ordering was so easy, Terry personally confirmed my order and answered all my questions. The Linen Bloom Dress is gorgeous for church Sundays. Already placed my second order!"</p>
+          <div class="review-product">✓ Verified Purchase · Linen Bloom Dress</div>
+          <div class="review-date">2 months ago</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar" style="background:#C5A8DA;color:#fff">GN</div>
+            <div>
+              <div class="review-name">Grace Ndirangu</div>
+              <div class="review-location">📍 Nairobi, Karen</div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">"These clothes are WORTH EVERY SHILLING. I've tried many baby brands in Kenya and nothing comes close to this quality. My daughter's paediatrician even commented on how soft and safe the fabric looks. The Warm Hug Cardigan is her favourite — she reaches for it every morning!"</p>
+          <div class="review-product">✓ Verified Purchase · Warm Hug Cardigan</div>
+          <div class="review-date">6 weeks ago</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar" style="background:#FFD4A8">BW</div>
+            <div>
+              <div class="review-name">Beatrice Waweru</div>
+              <div class="review-location">📍 Thika</div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">"Bought as a baby shower gift and the mum cried — the gift wrapping was so beautiful! She has since sent me photos of the baby in the outfit and it looks absolutely precious. Will always be gifting Terry Tender Wear from now on. Best baby gift in Kenya."</p>
+          <div class="review-product">✓ Verified Purchase · Gift Set</div>
+          <div class="review-date">1 month ago</div>
+        </div>
+
+      </div>
+      <button class="review-nav review-nav--next" id="rev-next" aria-label="Next review">›</button>
+    </div>
+
+    <!-- Dots navigation -->
+    <div class="reviews-dots" id="reviews-dots"></div>
+
+    <!-- Write a review CTA -->
+    <div class="text-center" style="margin-top:2.5rem">
+      <a href="https://wa.me/254794036128?text=Hello%20Terry%20Tender%20Wear,%20I%20would%20like%20to%20leave%20a%20review!" target="_blank" rel="noopener noreferrer" class="btn btn-outline">💬 Share Your Experience</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SIZE GUIDE ══════════════════════════════════════════════ -->
+<section class="section" style="background:var(--cream-d)">
+  <div class="container">
+    <div class="size-guide-wrap">
+      <div class="size-guide-content">
+        <span class="eyebrow">✦ Find the Perfect Fit</span>
+        <h2 class="title">Baby Size Guide</h2>
+        <p style="color:var(--mid);margin-bottom:1.5rem;line-height:1.8">All our clothing runs true to size. When in doubt, size up — babies grow fast! Our clothes are designed with extra room for nappies and comfortable movement.</p>
+        <div class="size-table-wrap">
+          <table class="size-table">
+            <thead>
+              <tr><th>Size</th><th>Age</th><th>Weight</th><th>Height</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="size-badge">NB</span></td><td>Newborn</td><td>Up to 4.5 kg</td><td>Up to 54 cm</td></tr>
+              <tr><td><span class="size-badge">0–3M</span></td><td>0–3 months</td><td>4.5–6 kg</td><td>54–61 cm</td></tr>
+              <tr><td><span class="size-badge">3–6M</span></td><td>3–6 months</td><td>6–7.5 kg</td><td>61–68 cm</td></tr>
+              <tr><td><span class="size-badge">6–12M</span></td><td>6–12 months</td><td>7.5–10 kg</td><td>68–76 cm</td></tr>
+              <tr><td><span class="size-badge">12–18M</span></td><td>12–18 months</td><td>10–11.5 kg</td><td>76–82 cm</td></tr>
+              <tr><td><span class="size-badge">18–24M</span></td><td>18–24 months</td><td>11.5–13 kg</td><td>82–88 cm</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:.8rem;color:var(--mid);margin-top:1rem">💬 Not sure? Message us on WhatsApp with your baby's age & weight — we'll recommend the perfect size.</p>
+      </div>
+      <div class="size-guide-visual">
+        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=500&auto=format&fit=crop&q=80" alt="Baby clothing size guide"/ loading="lazy" decoding="async">
+        <div class="size-guide-tip">
+          <div style="font-size:1.5rem;margin-bottom:.3rem">💡</div>
+          <strong>Pro Tip:</strong> Ordering a gift? Choose one size up — babies always appreciate room to grow!
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FEATURED PRODUCTS ══════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-top-row">
+      <div>
+        <span class="eyebrow">✦ Most Loved</span>
+        <h2 class="title">Customer Favourites</h2>
+        <p class="subtitle">The pieces parents can't stop ordering</p>
+      </div>
+      <a href="products.html" class="btn btn-outline btn-sm">Full Collection →</a>
+    </div>
+    <div class="products-grid" id="featured-grid">
+      <div class="skeleton skeleton-card"></div>
+      <div class="skeleton skeleton-card"></div>
+      <div class="skeleton skeleton-card"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PHOTO GALLERY / INSTAGRAM-STYLE ═══════════════════════ -->
+<section class="section" style="background:var(--cream-d)">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:2rem">
+      <span class="eyebrow">✦ Baby Moments</span>
+      <h2 class="title">Real Babies, Real Smiles</h2>
+      <p class="subtitle">Tag us @TerryTenderWear for a chance to be featured</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-item--tall">
+        <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&h=750&auto=format&fit=crop&q=80" alt="Baby in Terry Tender Wear" loading="lazy"/ decoding="async">
+        <div class="gallery-overlay"><span>@wanjiku_momlife</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?w=400&h=400&auto=format&fit=crop&q=80" alt="Soft onesie" loading="lazy"/ decoding="async">
+        <div class="gallery-overlay"><span>@amina.mama</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&auto=format&fit=crop&q=80" alt="Baby romper" loading="lazy"/ decoding="async">
+        <div class="gallery-overlay"><span>@faith_nakuru</span></div>
+      </div>
+      <div class="gallery-item gallery-item--wide">
+        <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=800&h=500&auto=format&fit=crop&q=80" alt="Baby sleepwear" loading="lazy"/ decoding="async">
+        <div class="gallery-overlay"><span>@caroline_mwangi</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=400&auto=format&fit=crop&q=80" alt="Baby dress" loading="lazy"/ decoding="async">
+        <div class="gallery-overlay"><span>@janet_eldoret</span></div>
+      </div>
+      <div class="gallery-item gallery-item--cta">
+        <div class="gallery-cta-content">
+          <div style="font-size:2.5rem;margin-bottom:.8rem">📸</div>
+          <h3>Share Your<br>Baby Moments</h3>
+          <p>Tag @TerryTenderWear on WhatsApp or social media</p>
+          <a href="https://wa.me/254794036128?text=Hello!%20I%20would%20like%20to%20share%20a%20photo%20of%20my%20baby%20in%20Terry%20Tender%20Wear!" target="_blank" rel="noopener noreferrer" class="btn btn-dark btn-sm" style="margin-top:1rem">Share Your Photo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ HOW IT WORKS ════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:2.5rem">
+      <span class="eyebrow">✦ So Simple</span>
+      <h2 class="title">How to Order</h2>
+      <p class="subtitle">From browse to your doorstep in 3 easy steps</p>
+    </div>
+    <div class="how-it-works-grid">
+      <div class="hiw-step">
+        <div class="hiw-num">01</div>
+        <div class="hiw-icon">🛍️</div>
+        <h3>Browse & Choose</h3>
+        <p>Explore our collection, add your favourites to the cart. Filter by category, age group or price.</p>
+      </div>
+      <div class="hiw-arrow">→</div>
+      <div class="hiw-step">
+        <div class="hiw-num">02</div>
+        <div class="hiw-icon">💬</div>
+        <h3>Order via WhatsApp</h3>
+        <p>Tap "Order via WhatsApp" — your cart becomes a message. We confirm within 5 minutes.</p>
+      </div>
+      <div class="hiw-arrow">→</div>
+      <div class="hiw-step">
+        <div class="hiw-num">03</div>
+        <div class="hiw-icon">🚚</div>
+        <h3>Delivered to You</h3>
+        <p>Pay via M-Pesa, get your tracking number, and receive your beautifully wrapped order.</p>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:2.5rem">
+      <a href="products.html" class="btn btn-dark btn-lg">Start Shopping Now →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NEWSLETTER ══════════════════════════════════════════════ -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-inner">
+      <div class="newsletter-content">
+        <span class="eyebrow" style="color:rgba(255,255,255,.7)">✦ Stay in the Loop</span>
+        <h2 class="title" style="color:#fff;margin-bottom:.6rem">Get New Arrivals First</h2>
+        <p style="color:rgba(255,255,255,.75);margin-bottom:1.5rem">Join 1,200+ Kenyan mums who get exclusive deals, new arrivals and parenting tips via WhatsApp.</p>
+        <a href="https://wa.me/254794036128?text=Hello!%20Please%20add%20me%20to%20your%20new%20arrivals%20WhatsApp%20group." target="_blank" rel="noopener noreferrer" class="btn-newsletter">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Join Our WhatsApp Community
+        </a>
+        <p style="color:rgba(255,255,255,.5);font-size:.75rem;margin-top:1rem">🔒 No spam. Unsubscribe anytime by messaging "STOP".</p>
+      </div>
+      <div class="newsletter-visual">
+        <div class="newsletter-phone">
+          <div class="nl-phone-header">💬 Terry Tender Wear</div>
+          <div class="nl-msg nl-msg--them">🎉 New arrivals just dropped! Sage Snuggle Sets are back in stock…</div>
+          <div class="nl-msg nl-msg--them">🚚 Flash sale: 20% off all sleepwear this weekend only!</div>
+          <div class="nl-msg nl-msg--me">I love the new onesie! Ordering now 🛍️</div>
+          <div class="nl-msg nl-msg--them">✅ Order confirmed! Delivery in 2 days 💗</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BRAND VALUES EXPANDED ══════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:2.5rem">
+      <span class="eyebrow">✦ Our Promise</span>
+      <h2 class="title">Why Terry Tender Wear?</h2>
+      <p class="subtitle">We don't just sell clothes — we dress your little one's childhood</p>
+    </div>
+    <div class="brand-promise-grid">
+      <div class="brand-promise-item">
+        <div class="bp-icon">🧪</div>
+        <h3>Lab Tested Fabrics</h3>
+        <p>Every fabric undergoes rigorous testing for baby safety. We check for harmful dyes, chemicals, and allergens before a single stitch is sewn.</p>
+      </div>
+      <div class="brand-promise-item">
+        <div class="bp-icon">✂️</div>
+        <h3>Purposeful Design</h3>
+        <p>Flat seams prevent skin irritation. Stretchy necklines make dressing easy. Snap closures for quick nappy changes. Every detail is intentional.</p>
+      </div>
+      <div class="brand-promise-item">
+        <div class="bp-icon">💪</div>
+        <h3>Built to Last</h3>
+        <p>Our clothes are designed to survive 50+ washes without losing shape, colour or softness. Quality you can pass on to the next child.</p>
+      </div>
+      <div class="brand-promise-item">
+        <div class="bp-icon">🇰🇪</div>
+        <h3>Proudly Kenyan</h3>
+        <p>Founded in Kenya, run by a Kenyan mother. We understand local families, local budgets, and what Kenyan babies truly need.</p>
+      </div>
+      <div class="brand-promise-item">
+        <div class="bp-icon">🎁</div>
+        <h3>Perfect Gifting</h3>
+        <p>Every order comes beautifully packaged in our signature tissue wrap with a handwritten card. Ready to give, no extra wrapping needed.</p>
+      </div>
+      <div class="brand-promise-item">
+        <div class="bp-icon">💰</div>
+        <h3>Honest Pricing</h3>
+        <p>Premium quality at fair Kenyan prices. No import markups. No middlemen. Just beautiful clothes your whole family can afford.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ SECTION ════════════════════════════════════════════ -->
+<section class="section faq-section" style="background:var(--cream-d)">
+  <div class="container">
+    <div class="faq-wrap">
+      <div>
+        <span class="eyebrow">✦ Got Questions?</span>
+        <h2 class="title" style="margin-bottom:.5rem">We Have Answers</h2>
+        <p class="subtitle" style="margin-bottom:2rem">Everything you need to know about ordering from Terry Tender Wear</p>
+        <div class="faq-list" id="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How do I place an order?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">Browse our shop, add items to your cart, and click "Order via WhatsApp". Your cart automatically creates a message with all your selected items and prices. We confirm your order within 5 minutes during business hours.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What payment methods do you accept?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">We accept M-Pesa (most popular), bank transfers, and cash on delivery within Nairobi. For M-Pesa, we send you a payment request via WhatsApp after confirming your order.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How long does delivery take?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">Nairobi: same-day or next-day delivery. Major cities (Mombasa, Kisumu, Nakuru, Eldoret): 1-2 business days. Other areas: 2-5 business days. We send tracking information as soon as your order is dispatched.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Can I exchange if the size is wrong?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">Absolutely! We offer free size exchanges within 7 days of delivery. Simply message us on WhatsApp with your order details and we'll arrange a swap at no extra cost. We recommend referring to our size guide before ordering to ensure the perfect fit.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Are your fabrics safe for newborns?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">Yes, 100%. All our fabrics are hypoallergenic, free from harmful dyes and chemicals, and specifically chosen for sensitive newborn skin. We would never sell anything we wouldn't put on our own babies.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you do gift orders and wrapping?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">Yes! Every order comes beautifully gift-wrapped in our signature packaging at no extra cost. For special occasions (birthdays, baby showers, naming ceremonies), let us know and we'll add a personalised card. We can also ship directly to the gift recipient.</div>
+          </div>
+
+        </div>
+      </div>
+      <div class="faq-cta">
+        <div class="faq-cta-inner">
+          <div style="font-size:3rem;margin-bottom:1rem">💬</div>
+          <h3>Still have questions?</h3>
+          <p>Chat with us directly on WhatsApp. A real person (not a bot!) replies within minutes.</p>
+          <a href="https://wa.me/254794036128?text=Hello%20Terry%20Tender%20Wear,%20I%20have%20a%20question!" target="_blank" rel="noopener noreferrer" class="btn btn-dark" style="margin-top:1.2rem;width:100%;justify-content:center">
+            Message Us Now
+          </a>
+          <div class="faq-cta-hours">
+            <div>📅 Mon–Fri: 8AM–7PM</div>
+            <div>📅 Sat: 9AM–6PM</div>
+            <div>📅 Sun: 10AM–4PM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FINAL CTA ═══════════════════════════════════════════════ -->
+<section class="section-sm">
+  <div class="container">
+    <div class="final-cta">
+      <div class="final-cta-bg"></div>
+      <div class="final-cta-content">
+        <span class="eyebrow" style="color:rgba(255,255,255,.8)">✦ Your Baby's Next Favourite Outfit Awaits</span>
+        <h2 style="font-family:var(--font-d);font-size:clamp(1.8rem,4vw,3rem);color:#fff;margin-bottom:.8rem;font-weight:700">Dress Them in the Best</h2>
+        <p style="color:rgba(255,255,255,.8);margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto">Join 500+ Kenyan families who choose Terry Tender Wear. Soft fabrics, beautiful designs, and an ordering experience that's as easy as sending a WhatsApp message.</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+          <a href="products.html" class="btn btn-light">Browse Full Collection →</a>
+          <a href="https://wa.me/254794036128" target="_blank" rel="noopener noreferrer" class="btn btn-wa-outline">💬 WhatsApp Us Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid-v2">
+      <div class="footer-col-brand">
+        <div class="footer-brand">Terry <span>Tender</span> Wear</div>
+        <p class="footer-tagline">Premium baby clothing crafted with love. Soft, safe, and simply adorable — for every precious moment.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/254794036128" target="_blank" rel="noopener noreferrer" class="social-btn social-wa" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+        <div class="footer-payment">
+          <span class="payment-badge">M-Pesa</span>
+          <span class="payment-badge">Bank Transfer</span>
+          <span class="payment-badge">Cash on Delivery</span>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-h">Shop</h4>
+        <ul class="footer-links">
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="products.html?cat=Onesies">Onesies</a></li>
+          <li><a href="products.html?cat=Sets">Matching Sets</a></li>
+          <li><a href="products.html?cat=Rompers">Rompers</a></li>
+          <li><a href="products.html?cat=Sleepwear">Sleepwear</a></li>
+          <li><a href="products.html?cat=Dresses">Dresses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-h">Help</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="https://wa.me/254794036128" target="_blank" rel="noopener noreferrer">WhatsApp Support</a></li>
+          <li><a href="#faq-list">FAQ</a></li>
+          <li><a href="admin-login.html">Admin Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-h">Contact</h4>
+        <ul class="footer-links" style="gap:1rem">
+          <li style="display:flex;gap:.5rem;align-items:flex-start"><span>📍</span><span>Nairobi, Kenya<br><small style="color:rgba(250,249,246,.4)">Nationwide delivery</small></span></li>
+          <li style="display:flex;gap:.5rem;align-items:center"><span>📞</span><a href="tel:+254794036128">+254 794 036 128</a></li>
+          <li style="display:flex;gap:.5rem;align-items:center"><span>⏰</span><span style="font-size:.8rem">Mon–Fri: 8AM–7PM</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Terry Tender Wear. All rights reserved.</span>
+      <span style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center">
+        <span>Made with 💗 in Kenya</span>
+        <span>·</span>
+        <span>🌿 Baby-Safe Certified</span>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button -->
+<a href="https://wa.me/254794036128?text=Hello%20Terry%20Tender%20Wear!" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="wa-float-pulse"></span>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="seo.js"></script>
+<script src="supabase-config.js"></script>
+<script src="db.js"></script>
+<script src="cart.js"></script>
+<script src="app.js"></script>
+<script>
+// Nav cart
+document.getElementById("nav-cart-btn").addEventListener("click", function(){ Cart.openDrawer(); });
+
+// Promo banner
+(function(){
+  var banner = document.getElementById("promo-banner");
+  var close  = document.getElementById("promo-close");
+  if(sessionStorage.getItem("promo-closed")) banner.style.display = "none";
+  close.addEventListener("click", function(){
+    banner.style.display = "none";
+    sessionStorage.setItem("promo-closed","1");
+  });
+
+  // Countdown (fake urgency — resets daily)
+  function updateCountdown(){
+    var now  = new Date();
+    var end  = new Date(now); end.setHours(23,59,59,0);
+    var diff = Math.floor((end - now) / 1000);
+    var h    = Math.floor(diff/3600);
+    var m    = Math.floor((diff%3600)/60);
+    var s    = diff%60;
+    var el   = document.getElementById("promo-countdown");
+    if(el) el.textContent = "Offer ends in " + h + "h " + m + "m " + s + "s";
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+})();
+
+// Animated stat counters
+(function(){
+  function animateCounter(el, target, duration){
+    var start    = 0;
+    var step     = target / (duration / 16);
+    var interval = setInterval(function(){
+      start += step;
+      if(start >= target){ start = target; clearInterval(interval); }
+      el.textContent = Math.floor(start);
+    }, 16);
+  }
+  var observed = false;
+  var strip = document.querySelector(".stats-strip");
+  if(!strip) return;
+  var observer = new IntersectionObserver(function(entries){
+    if(entries[0].isIntersecting && !observed){
+      observed = true;
+      document.querySelectorAll(".stats-strip-num[data-target]").forEach(function(el){
+        animateCounter(el, parseInt(el.dataset.target, 10), 1600);
+      });
+    }
+  }, { threshold: 0.3 });
+  observer.observe(strip);
+})();
+
+// Review carousel
+(function(){
+  var track  = document.getElementById("reviews-carousel");
+  var prev   = document.getElementById("rev-prev");
+  var next   = document.getElementById("rev-next");
+  var dotsWrap = document.getElementById("reviews-dots");
+  if(!track) return;
+
+  var cards  = track.querySelectorAll(".review-card");
+  var total  = cards.length;
+  var current = 0;
+  var visCount = window.innerWidth < 640 ? 1 : window.innerWidth < 900 ? 2 : 3;
+
+  function buildDots(){
+    dotsWrap.innerHTML = "";
+    var pages = Math.ceil(total / visCount);
+    for(var i=0;i<pages;i++){
+      var d = document.createElement("button");
+      d.className = "review-dot" + (i===0?" active":"");
+      d.setAttribute("aria-label","Review page " + (i+1));
+      (function(idx){
+        d.addEventListener("click", function(){ goTo(idx * visCount); });
+      })(i);
+      dotsWrap.appendChild(d);
+    }
+  }
+
+  function goTo(idx){
+    if(idx < 0) idx = Math.max(0, total - visCount);
+    if(idx > total - visCount) idx = 0;
+    current = idx;
+    var cardWidth = cards[0].offsetWidth + parseInt(getComputedStyle(track).gap || "0");
+    track.style.transform = "translateX(-" + (current * cardWidth) + "px)";
+    var page = Math.floor(current / visCount);
+    document.querySelectorAll(".review-dot").forEach(function(d,i){ d.classList.toggle("active", i===page); });
+  }
+
+  prev.addEventListener("click", function(){ goTo(current - visCount); });
+  next.addEventListener("click", function(){ goTo(current + visCount); });
+
+  // Auto-play
+  var autoPlay = setInterval(function(){ goTo(current + visCount); }, 5000);
+  track.addEventListener("mouseenter", function(){ clearInterval(autoPlay); });
+
+  buildDots();
+
+  // Touch swipe
+  var startX;
+  track.addEventListener("touchstart", function(e){ startX = e.touches[0].clientX; }, { passive:true });
+  track.addEventListener("touchend",   function(e){
+    var diff = startX - e.changedTouches[0].clientX;
+    if(Math.abs(diff) > 50) diff > 0 ? goTo(current+1) : goTo(current-1);
+  });
+
+  window.addEventListener("resize", function(){
+    visCount = window.innerWidth < 640 ? 1 : window.innerWidth < 900 ? 2 : 3;
+    buildDots(); goTo(0);
+  });
+})();
+
+// FAQ accordion
+(function(){
+  document.querySelectorAll(".faq-question").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var item   = btn.closest(".faq-item");
+      var answer = item.querySelector(".faq-answer");
+      var open   = item.classList.contains("open");
+      // Close all
+      document.querySelectorAll(".faq-item.open").forEach(function(el){
+        el.classList.remove("open");
+        el.querySelector(".faq-answer").style.maxHeight = "0";
+        el.querySelector(".faq-icon").textContent = "+";
+        el.querySelector(".faq-question").setAttribute("aria-expanded","false");
+      });
+      if(!open){
+        item.classList.add("open");
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        btn.querySelector(".faq-icon").textContent = "−";
+        btn.setAttribute("aria-expanded","true");
+      }
+    });
+  });
+})();
+
+// Sticky header shrink on scroll
+(function(){
+  var header = document.getElementById("site-header");
+  var promo  = document.getElementById("promo-banner");
+  window.addEventListener("scroll", function(){
+    header.classList.toggle("scrolled", window.scrollY > 60);
+  }, { passive:true });
+})();
+</script>
+</body>
+</html>

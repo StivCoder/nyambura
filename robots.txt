@@ -1,0 +1,34 @@
+# Terry Tender Wear — robots.txt
+# ================================
+# HOW TO USE:
+# Upload this file to your root domain: https://terrytenderwear.co.ke/robots.txt
+# Update the Sitemap URL below to match your real domain.
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /products.html
+Allow: /about.html
+Allow: /contact.html
+
+# Block admin pages from being indexed
+Disallow: /admin.html
+Disallow: /admin-login.html
+
+# Block JS/CSS from indexing (Google can still crawl them for rendering)
+# Remove these lines if you want Google to fully render your pages
+# Disallow: /*.js$
+# Disallow: /*.css$
+
+# Block config files
+Disallow: /supabase-config.js
+Disallow: /db.js
+
+# Block the Supabase guide from public search results
+Disallow: /SUPABASE_GUIDE.html
+
+# Sitemap location — UPDATE THIS URL to your real domain
+Sitemap: https://terrytenderwear.co.ke/sitemap.xml
+
+# Crawl delay (optional — reduces server load)
+Crawl-delay: 1

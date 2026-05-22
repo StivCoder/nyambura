@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Login — Terry Tender Wear</title>
+  <meta name="robots" content="noindex,nofollow"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<script>
+/* ── Inline nav init — runs immediately, no dependency on app.js ── */
+(function(){
+  function initNav(){
+    var toggle = document.getElementById('nav-toggle');
+    var links  = document.getElementById('nav-links');
+    if(!toggle || !links) return;
+    
+    toggle.addEventListener('click', function(){
+      var isOpen = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-active', isOpen);
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    
+    // Close on link click
+    links.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        links.classList.remove('is-open');
+        toggle.classList.remove('is-active');
+        toggle.setAttribute('aria-expanded','false');
+        document.body.style.overflow = '';
+      });
+    });
+    
+    // Close on outside click
+    document.addEventListener('click', function(e){
+      if(links.classList.contains('is-open') && 
+         !toggle.contains(e.target) && 
+         !links.contains(e.target)){
+        links.classList.remove('is-open');
+        toggle.classList.remove('is-active');
+        toggle.setAttribute('aria-expanded','false');
+        document.body.style.overflow = '';
+      }
+    });
+
+    // Sticky header on scroll
+    var header = document.getElementById('site-header');
+    if(header){
+      window.addEventListener('scroll', function(){
+        header.classList.toggle('scrolled', window.scrollY > 60);
+      }, {passive:true});
+    }
+  }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initNav);
+  } else {
+    initNav();
+  }
+})();
+</script>
+
+
+<div class="admin-login-wrap">
+
+  <!-- Brand panel (hidden on mobile) -->
+  <div class="admin-login-brand">
+    <div class="alb-graphic">👶</div>
+    <div class="alb-logo">Terry <span>Tender</span> Wear</div>
+    <p class="alb-tagline">Admin Portal — Manage your store</p>
+  </div>
+
+  <!-- Login form -->
+  <div class="admin-login-form-wrap">
+    <div class="admin-login-box">
+
+      <h1>Welcome back</h1>
+      <p>Sign in to manage products, prices and orders.</p>
+
+      <!-- Connection status badge -->
+      <div id="db-status" style="margin-bottom:1.5rem">
+        <span class="db-badge local"><span class="db-dot"></span>Checking connection…</span>
+      </div>
+
+      <!-- Email (only shown when Supabase is configured) -->
+      <div class="form-group" id="email-group" style="display:none">
+        <label for="login-email">Email Address</label>
+        <input type="email" id="login-email" class="form-input"
+               placeholder="you@example.com" autocomplete="email"/>
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" class="form-input"
+               placeholder="Enter your password" autocomplete="current-password"/>
+        <div class="form-error" id="login-error"></div>
+      </div>
+
+      <button class="btn-login" id="login-btn">Sign In to Dashboard</button>
+
+      <!-- Info notice shown in LocalStorage mode -->
+      <div class="supabase-notice" id="local-notice" style="display:none">
+        <strong>📍 Local Storage Mode</strong><br>
+        Default password: <code style="background:rgba(255,255,255,.6);padding:1px 5px;border-radius:4px">terry2024</code><br><br>
+        To use Supabase, open <code>supabase-config.js</code> and paste your Project URL and anon key.
+        <br><br>
+        <a href="SUPABASE_GUIDE.html" target="_blank">View setup guide →</a>
+      </div>
+
+      <!-- Info notice shown in Supabase mode -->
+      <div class="supabase-notice" id="sb-notice" style="display:none;background:rgba(178,172,136,.15);color:var(--mint-d)">
+        <strong>🔗 Supabase Connected</strong><br>
+        Enter the email and password you created in Supabase → Authentication → Users.
+        <br><br>
+        <a href="SUPABASE_GUIDE.html" target="_blank" style="color:var(--mint-d)">Need help? View guide →</a>
+      </div>
+
+      <p style="margin-top:1.4rem;font-size:.78rem;color:var(--mid);text-align:center">
+        <a href="index.html">← Back to Store</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Load Supabase SDK first, then config, then db -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="supabase-config.js"></script>
+<script src="db.js"></script>
+<script>
+(function () {
+  var loginBtn  = document.getElementById("login-btn");
+  var passEl    = document.getElementById("login-password");
+  var emailEl   = document.getElementById("login-email");
+  var errEl     = document.getElementById("login-error");
+  var dbStatus  = document.getElementById("db-status");
+  var emailGrp  = document.getElementById("email-group");
+  var localNote = document.getElementById("local-notice");
+  var sbNote    = document.getElementById("sb-notice");
+
+  function showError(msg) {
+    errEl.textContent = msg;
+    errEl.classList.add("show");
+    passEl.classList.add("error");
+  }
+
+  function clearError() {
+    errEl.classList.remove("show");
+    passEl.classList.remove("error");
+    errEl.textContent = "";
+  }
+
+  async function init() {
+    // Redirect if already logged in
+    try {
+      var loggedIn = await DB.isAdminLoggedIn();
+      if (loggedIn) { window.location.href = "admin.html"; return; }
+    } catch (e) { /* not logged in, continue */ }
+
+    var cfg = window.TERRY_CONFIG;
+
+    if (cfg && cfg.configured) {
+      dbStatus.innerHTML = '<span class="db-badge live"><span class="db-dot"></span>Supabase Connected</span>';
+      emailGrp.style.display = "flex";
+      sbNote.style.display = "block";
+    } else {
+      dbStatus.innerHTML = '<span class="db-badge local"><span class="db-dot"></span>Local Storage Mode</span>';
+      localNote.style.display = "block";
+    }
+  }
+
+  async function doLogin() {
+    clearError();
+
+    var password = passEl.value.trim();
+    var email    = emailEl ? emailEl.value.trim() : "";
+    var cfg      = window.TERRY_CONFIG;
+
+    if (!password) { showError("Please enter your password."); passEl.focus(); return; }
+    if (cfg && cfg.configured && !email) { showError("Please enter your email address."); emailEl.focus(); return; }
+
+    loginBtn.disabled = true;
+    loginBtn.innerHTML = '<span class="spinner"></span> Signing in…';
+
+    try {
+      await DB.adminLogin(email, password);
+      window.location.href = "admin.html";
+    } catch (err) {
+      showError(err.message || "Login failed. Please check your credentials.");
+      loginBtn.disabled = false;
+      loginBtn.textContent = "Sign In to Dashboard";
+      passEl.focus();
+    }
+  }
+
+  // Wire events
+  loginBtn.addEventListener("click", doLogin);
+  passEl.addEventListener("keydown", function (e) { if (e.key === "Enter") doLogin(); });
+  passEl.addEventListener("input",   clearError);
+  if (emailEl) emailEl.addEventListener("keydown", function (e) { if (e.key === "Enter") passEl.focus(); });
+
+  // Run init
+  document.addEventListener("DOMContentLoaded", init);
+})();
+</script>
+</body>
+</html>
